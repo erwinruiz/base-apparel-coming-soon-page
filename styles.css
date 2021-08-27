@@ -1,88 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 :root {
-    /* Primary */
-    --DesaturatedRed: hsl(0, 36%, 70%);
-    --SoftRed: hsl(0, 93%, 68%);
+  /* Primary */
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
 
-    /* Neutral */
-    --DarkGrayishRed: hsl(0, 6%, 24%);
+  /* Neutral */
+  --DarkGrayishRed: hsl(0, 6%, 24%);
 
-    /* Gradients */
-    /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
-    /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+  /* Gradients */
+  /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+  /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 header {
-    height: 80px;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    width: 315px;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  width: 315px;
 }
 header img {
-    height: 20px;
+  height: 20px;
 }
 main {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 main .content {
-    padding: 50px 30px;
-    width: 315px;
+  padding: 50px 30px;
+  width: 315px;
 }
 main .content h1 span {
-    color: var(--DesaturatedRed);
-    font-weight: 300;
+  color: var(--DesaturatedRed);
+  font-weight: 300;
 }
 main .content h1 {
-    font-size: 44px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 8px;
-    font-weight: 400;
-    margin-bottom: 20px;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 8px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
-main .content p {
-    text-align: center;
-    color: var(--DesaturatedRed);
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 14px;
-    margin-bottom: 30px;
+main .content .description {
+  text-align: center;
+  color: var(--DesaturatedRed);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 main .content input {
-    width: 275px;
-    border: 1px solid var(--DesaturatedRed);
-    border-radius: 25px;
-    padding: 15px 20px;
-    outline: none;
+  width: 200px;
+  border: 1px solid var(--DesaturatedRed);
+  border-radius: 25px;
+  padding: 15px 95px 15px 20px;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 main .content input::placeholder {
-    color: var(--DesaturatedRed);
-    opacity: .5;
+  color: var(--DesaturatedRed);
+  opacity: 0.5;
 }
-main .content .arrow-icon {
-    height: 47px;
-    width: 60px;
-    border-radius: 145px;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 256.5px;
-    margin-top: -47px;
-    box-shadow: 0 12px 10px 3px hsla(0, 80%, 86%, 0.335);
+main .content .arrow_icon {
+  height: 45px;
+  width: 60px;
+  border-radius: 145px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 256.5px;
+  margin-top: -45px;
+  box-shadow: 0 12px 10px 3px hsla(0, 80%, 86%, 0.335);
+  cursor: pointer;
+}
+main .content .arrow_icon:hover {
+  background: linear-gradient(
+    135deg,
+    hsla(0, 80%, 86%, 0.52),
+    hsla(0, 74%, 74%, 0.52)
+  );
+}
+main .content .error_message {
+  display: none;
+}
+main .content .error_message img {
+  position: absolute;
+  height: 20px;
+  margin-left: 225px;
+  margin-top: -33px;
+}
+main .content .error_message p {
+  position: absolute;
+  color: var(--SoftRed);
+  text-align: left;
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: 10px;
 }
