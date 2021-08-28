@@ -25,6 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshots/desktop-design.png)
+![](./screenshots/desktop-design-active-state.png)
 ![](./screenshots/mobile-design.png)
 
 ### Links
@@ -38,7 +40,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 The designs were created to the following widths:
