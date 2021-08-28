@@ -95,7 +95,7 @@ main .content .arrow_icon:hover {
     hsla(0, 74%, 74%, 0.52)
   );
 }
-main .content .error_message {
+main .content .hide {
   display: none;
 }
 main .content .error_message img {
@@ -111,4 +111,7 @@ main .content .error_message p {
   margin-left: 20px;
   font-size: 12px;
   margin-top: 10px;
+}
+.input_error {
+  border: 1px solid var(--SoftRed) !important;
 }
