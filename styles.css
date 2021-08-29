@@ -96,11 +96,8 @@ main .content .arrow_icon {
   cursor: pointer;
 }
 main .content .arrow_icon:hover {
-  background: linear-gradient(
-    135deg,
-    hsla(0, 80%, 86%, 0.52),
-    hsla(0, 74%, 74%, 0.52)
-  );
+  filter: brightness(115%);
+  box-shadow: 0 12px 10px 3px hsla(0, 80%, 86%, 0.856);
 }
 main .content .hide {
   display: none;
@@ -177,15 +174,15 @@ main .content .error_message p {
   }
   main .content input {
     width: 275px;
-    padding: 20px 140px 20px 20px;
+    padding: 18px 140px 20px 18px;
     border-radius: 30px;
     font-size: 16px;
   }
   main .content .arrow_icon {
-    height: 58px;
-    width: 90px;
-    margin-left: 347px;
-    margin-top: -58px;
+    height: 56px;
+    width: 95px;
+    margin-left: 342px;
+    margin-top: -56px;
   }
   main .content .error_message img {
     height: initial;
